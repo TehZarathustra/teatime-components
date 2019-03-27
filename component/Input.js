@@ -73,6 +73,7 @@ class Input extends Component {
 
     if (!this._controlled) this.setState({value});
     this.props.onChange(e, {name, value});
+    this.props.onClose(e, {name, value});
     this.focus();
   }
 
@@ -92,7 +93,7 @@ class Input extends Component {
   }
 
   renderClear() {
-    const {disabled} = this.props;
+    const {disabled, onClose} = this.props;
     const {value} = this.state;
 
     if (disabled || !value) return null;
@@ -169,6 +170,7 @@ Input.propTypes = {
   name: PropTypes.string.isRequired,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
+  onClose: PropTypes.func,
   onFocus: PropTypes.func,
   placeholder: PropTypes.string,
   readOnly: PropTypes.bool,
