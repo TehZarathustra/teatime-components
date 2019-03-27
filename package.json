@@ -1,6 +1,6 @@
 {
   "name": "teatime-components",
-  "version": "0.10.15",
+  "version": "0.10.16",
   "description": "React components + CSS Modules",
   "main": "index.js",
   "scripts": {
