@@ -3385,9 +3385,7 @@ var Input = function (_Component) {
   }, {
     key: 'renderClear',
     value: function renderClear() {
-      var _props = this.props,
-          disabled = _props.disabled,
-          onClose = _props.onClose;
+      var disabled = this.props.disabled;
       var value = this.state.value;
 
 
@@ -3405,18 +3403,18 @@ var Input = function (_Component) {
     value: function renderInput() {
       var _this2 = this;
 
-      var _props2 = this.props,
-          autoComplete = _props2.autoComplete,
-          autoFocus = _props2.autoFocus,
-          disabled = _props2.disabled,
-          id = _props2.id,
-          maxLength = _props2.maxLength,
-          name = _props2.name,
-          onBlur = _props2.onBlur,
-          onFocus = _props2.onFocus,
-          placeholder = _props2.placeholder,
-          readOnly = _props2.readOnly,
-          type = _props2.type;
+      var _props = this.props,
+          autoComplete = _props.autoComplete,
+          autoFocus = _props.autoFocus,
+          disabled = _props.disabled,
+          id = _props.id,
+          maxLength = _props.maxLength,
+          name = _props.name,
+          onBlur = _props.onBlur,
+          onFocus = _props.onFocus,
+          placeholder = _props.placeholder,
+          readOnly = _props.readOnly,
+          type = _props.type;
       var value = this.state.value;
       var css = this.css;
 
