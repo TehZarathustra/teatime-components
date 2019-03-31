@@ -93,7 +93,7 @@ class Input extends Component {
   }
 
   renderClear() {
-    const {disabled, onClose} = this.props;
+    const {disabled} = this.props;
     const {value} = this.state;
 
     if (disabled || !value) return null;
