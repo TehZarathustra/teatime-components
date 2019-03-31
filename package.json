@@ -1,6 +1,6 @@
 {
   "name": "teatime-components-di-fork",
-  "version": "0.10.18",
+  "version": "0.10.19",
   "description": "React components + CSS Modules",
   "main": "index.js",
   "scripts": {
