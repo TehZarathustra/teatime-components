@@ -3460,13 +3460,16 @@ var _initialiseProps = function _initialiseProps() {
   };
 
   this._onClear = function (e) {
-    var name = _this3.props.name;
+    var _props2 = _this3.props,
+        name = _props2.name,
+        onChange = _props2.onChange;
 
     var value = '';
+    var onClose = _this3.props.onClose || function () {};
 
     if (!_this3._controlled) _this3.setState({ value: value });
-    _this3.props.onChange(e, { name: name, value: value });
-    _this3.props.onClose(e, { name: name, value: value });
+    onChange(e, { name: name, value: value });
+    onClose(e, { name: name, value: value });
     _this3.focus();
   };
 };
